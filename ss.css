@@ -1,0 +1,59 @@
+/********** Base styles **********/
+
+h1 {
+	
+margin-bottom: 15px;
+text-align: center;
+
+}
+
+.row{width: 100%;}
+
+h2{
+float: right;
+border: 1px solid black;
+text-align: right;
+background-color:#DEB887;
+}
+
+section {
+
+border: 1px solid black;
+margin-left: 5px;
+margin-right: 5px;
+margin-bottom: 15px;
+float: left;
+padding: 10px;
+overflow: auto;
+background-color:#A52A2A;
+}
+
+p{float: left;
+padding: 10px;
+overflow: auto;
+}
+
+#h2{background-color:#DEB887;
+ }
+
+/********** Large devices  **********/
+
+@media (min-width: 992px) {
+	.col-lg-4{float: left;}
+	.col-lg-4{width: 33.33%}
+
+}
+
+/********** Medium devices  **********/
+
+@media (min-width: 768px) and (max-width: 991px) { 
+	.col-mg-6, .col-mg-12{float: left;}
+	.col-mg-6{width: 50%;}
+	.col-mg-12{width: 100%;}
+}
+/********** mobile devices **********/
+
+@media (max-width: 767px) {
+	.col-sg-12{float: left;}
+	.col-sg-12{width: 100%;}
+}
