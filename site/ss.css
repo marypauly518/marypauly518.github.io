@@ -1,3 +1,5 @@
+/********** Base styles **********/
+
 h1 {
 	
 margin-bottom: 15px;
@@ -5,126 +7,53 @@ text-align: center;
 
 }
 
+.row{width: 100%;}
 
+h2{
+float: right;
+border: 1px solid black;
+text-align: right;
+background-color:#DEB887;
+}
 
-p {
+section {
 
 border: 1px solid black;
 margin-left: 5px;
-	margin-right: 5px;
-
+margin-right: 5px;
 margin-bottom: 15px;
 float: left;
 padding: 10px;
 overflow: auto;
+background-color:#A52A2A;
 }
 
-#p1{
-
-background-color: #A52A2A;
-width: 410px;
-
-
-
-
+p{float: left;
+padding: 10px;
+overflow: auto;
 }
 
-#p2 {
-
-background-color: #DEB887;
-width: 410px;
-
-
-
-}
-
-#p3 {
-
-background-color: #A52A2A;
-
-width: 410px;
-
-
-}
-
-
-
-
+#h2{background-color:#DEB887;
+ }
 
 /********** Large devices  **********/
 
 @media (min-width: 992px) {
-
-#p1 {
-
-width: 30.33%;
-
-}
-
-
-
-#p2 {
-
-width: 30.33%;
-
-
-}
-#p3 {
-
-width: 30.33%;
-
-
-}
+	.col-lg-4{float: left;}
+	.col-lg-4{width: 33.33%}
 
 }
 
 /********** Medium devices  **********/
 
-@media (min-width: 768px) and (max-width: 991px) {
-
-#p1 {
-
-width: 40%;
-
-}
-
-#p2 {
-
-width: 40%
-
-
-
-}
-#p3 {
-
-width: 100%
-
-}
-body{background-color: yellow;}
-
+@media (min-width: 768px) and (max-width: 991px) { 
+	.col-mg-6, .col-mg-12{float: left;}
+	.col-mg-6{width: 50%;}
+	.col-mg-12{width: 100%;}
 }
 /********** mobile devices **********/
 
 @media (max-width: 767px) {
-
-#p1 {
-
-width: 100%;
-
-}
-
-#p2 {
-
-width: 100%;
-
-
-}
-#p3 {
-
-width: 100%;
-
-
-}
-body{background-color: gray;}
-
+	.col-sg-12{float: left;}
+	.col-sg-12{width: 100%;}
 }
